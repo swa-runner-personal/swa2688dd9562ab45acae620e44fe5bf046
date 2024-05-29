@@ -27,7 +27,7 @@ jobs:
         app_location: "src"
         api_location: "api"
         output_location: ""
-        production_branch: prBranch
+        production_branch: "prBranch"
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
